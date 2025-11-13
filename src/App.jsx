@@ -7,7 +7,7 @@ function App() {
     "https://api.escuelajs.co/api/v1/products"
   );
    
-  const showItems = data.slice(0, 20);
+ 
 
   if (loading)
      return <p className="loading">Loading products...</p>;
@@ -16,7 +16,7 @@ function App() {
   if (!data || data.length === 0) 
     return <p className="error">No products found.</p>;
 
- 
+  const showItems = data.slice(0, 20);
   return (
     <div className="App">
       <div className="Heading">
