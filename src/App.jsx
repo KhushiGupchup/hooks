@@ -16,7 +16,7 @@ function App() {
   if (!data || data.length === 0) 
     return <p className="error">No products found.</p>;
 
-  const showItems = data.slice(0, 20);
+  const showItems = data;
   return (
     <div className="App">
       <div className="Heading">
