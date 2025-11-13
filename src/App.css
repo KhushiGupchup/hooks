@@ -1,0 +1,68 @@
+.Heading{
+  text-align: center;
+  color: white;
+ margin-top: 30px;
+
+}
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 40px;
+ 
+  margin: 0 auto;
+}
+
+.item-card {
+  background-color: #111;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;         
+  text-align: center;
+  cursor: pointer;
+  height: 300px;
+  padding: 10px;
+}
+
+.item-card h3 {
+  color: rgb(253, 250, 250);
+  font-size: 16px;
+  margin: 0;
+  flex-grow: 1;   
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+  color: white;
+}
